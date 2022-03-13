@@ -112,6 +112,7 @@ const numbers = [1, 2, 4, 6, 5, 10];
 function sum(x) {
   return x * x;
 }
+
 const result = numbers.map(
   (x = function (x) {
     return x * x;
@@ -139,7 +140,7 @@ console.log(output3);
 //Filter
 
 // 1) filter হচ্ছে  যে শর্ত দেওয়া হয় সে শর্ত  ফুল ফিল করলে পুরো এলিমেন্টকে দিবে.
-// 2) যতগুলো পাবে ততখুলো দিবে । না পাইলে খালি এরে দিবে
+// 2) যতগুলো পাবে তত খুলো দিবে । না পাইলে খালি এরে দিবে
 // 3) ফিল্টার  চেকপয়েন্ট অথবা শর্ত  সাপেক্ষে   কিছু এলিমেন্ট কে নিবে আবার কিছু এলিমেন্ট কে নিবে  না |
 
 const products = [
@@ -185,6 +186,12 @@ const number = null;
 
 console.log(number?.age, number?.name);
 console.log(number);
+
+// indexof
+
+const friends2 = ["squash", "onions", "shallots"];
+
+console.log(friends2.indexOf("gias") == -1);
 
 // এইবার  একটু  API  নিয়ে  আলোচনা  করা  যাক
 
